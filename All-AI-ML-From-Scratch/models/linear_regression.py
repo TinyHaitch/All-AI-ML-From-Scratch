@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[3]:
+# In[1]:
 
 
 import numpy as np
@@ -9,7 +9,7 @@ import numpy as np
 from models.base_model import BaseModel
 
 
-# In[16]:
+# In[2]:
 
 
 class LinearRegression(BaseModel):
@@ -46,7 +46,7 @@ class LinearRegression(BaseModel):
         self.weights = None
         self.bias = None 
         self.cost_history = []
-
+ 
     def cost_function(self, X, y):
         ''' 
         Compute the cost for all examples
@@ -178,6 +178,9 @@ class LinearRegression(BaseModel):
             cost = self.cost_function(X, y)
             self.cost_history.append(cost)
 
+            if iter_ % 100 == 0:
+                print(f"Iteration {iter_}, Cost: {cost}")
+
 
     def predict(self, X): 
         ''' 
@@ -205,10 +208,16 @@ class LinearRegression(BaseModel):
                     
 
 
-# In[18]:
+# In[ ]:
 
 
-# !jupyter nbconvert --to script "Linear_Regression.ipynb" --output 'linear_regression' --output-dir='../models/'
+# In[3]:
+
+
+# get_ipython().system('jupyter nbconvert --to script "Linear_Regression.ipynb" --output \'linear_regression\' --output-dir=\'../models/\'')
+
+
+# In[ ]:
 
 
 # In[ ]:
