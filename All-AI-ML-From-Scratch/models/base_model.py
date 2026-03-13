@@ -65,7 +65,7 @@ class BaseModel:
 # In[ ]:
 
 
-get_ipython().system('jupyter nbconvert --to script base_model.ipynb')
+# get_ipython().system('jupyter nbconvert --to script base_model.ipynb')
 
 
 # In[ ]:
