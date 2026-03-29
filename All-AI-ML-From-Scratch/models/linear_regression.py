@@ -14,7 +14,7 @@ from models.base_model import BaseModel
 
 class LinearRegression(BaseModel):
     '''
-    Linear Regression model implementation from scratch
+    Linear Regression model implementation from scratch.
 
     Inherits from BaseModel and provides concrete implementation
     fot fit() and predict() methods.
@@ -49,7 +49,7 @@ class LinearRegression(BaseModel):
  
     def cost_function(self, X, y):
         ''' 
-        Compute the cost for all examples
+        Compute the cost for all examples.
 
         Parameters
         ----------
